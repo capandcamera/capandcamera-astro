@@ -9,7 +9,7 @@ const currentPage = Astro.request.url.pathname;
 ---
 
 {
-    json.nav.map(({ title, hidden, children}) => (
+    json.nav?.map(({ title, hidden, children}) => (
         hidden != true ?
             children.length === 0 ?
                 <ul id={'nav-' + title}>
@@ -25,7 +25,7 @@ const currentPage = Astro.request.url.pathname;
                     </a>
 
             
-                    {children.map((child) =>
+                    {children?.map((child) =>
                         child.hidden != true ?
                             <li id={'nav-' + title + '-' + child.page} class={currentPage.startsWith('/' + title) ? 'group-visible nav-child nav-' + title : 'nav-child nav-' + title}>
                                 <a href={'/' + title + '/' + child.page} class={currentPage === '/' + title +'/' + child.page ? 'nav-selected' : undefined}> {child.title} </a>

@@ -2,22 +2,28 @@
     "nav" : [
         {   
             "title": "about",
+            "hidden": false,
             "children": []
         },
         {   
             "title": "photography",
+            "hidden": false,
             "children": [ 
                 {                
                     "page": "general",
-                    "title": "general"
+                    "title": "general",
+                    "hidden": false
+
                 },
                 {
                     "page": "astro",
-                    "title": "astronomical"
+                    "title": "astronomical",
+                    "hidden": false
                 },
                 {
                     "page": "action-figures",
-                    "title": "action figures"
+                    "title": "action figures",
+                    "hidden": false
                 }
             ]
         },

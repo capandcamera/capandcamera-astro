@@ -1,6 +1,5 @@
 {
-    "general": [
-                
+    "general": [                
         {
             "path": "/assets/photos/DSC01151-720x1080.jpg",
             "caption": "TREE (B&W)"
@@ -50,16 +49,16 @@
     ],
     "astro": [ 
         {
-          "path": "/assets/photos/DSC02243-1080x720.jpg",
-          "caption": "MOON"
+            "path": "/assets/photos/DSC02243-1080x720.jpg",
+            "caption": "MOON"
         },
         {
-          "path": "/assets/photos/MoonStack_20210717-1080x720.jpg",
-          "caption": "MOON (STACKED)"
+            "path": "/assets/photos/MoonStack_20210717-1080x720.jpg",
+            "caption": "MOON (STACKED)"
         },
         {
             "path": "/assets/photos/MoonStack_20210922-1080x720.jpg",
             "caption": "MOON (STACKED)"
         }
-
-    ]}
+    ]
+}
