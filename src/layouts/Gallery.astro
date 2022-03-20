@@ -1,0 +1,11 @@
+---
+// Style Imports
+import Layout from './BaseLayout.astro'
+import BuildGallery from '../components/BuildGallery.astro';
+
+const {gallery} = Astro.props;
+---
+  
+<Layout>
+  <BuildGallery gallery={gallery}/>
+</Layout>

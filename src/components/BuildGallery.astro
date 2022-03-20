@@ -1,0 +1,20 @@
+---
+import '../sass/styles.scss'
+import json from '../json/gallery.json'
+
+const gallery = json[Astro.props.gallery];
+---
+  <div class="gallery">
+    <ul class="justified-image-grid">
+        {
+            gallery.map(({ path, caption}) => (
+                <li style={'--width: ' + path.substring(path.lastIndexOf("-") + 1, path.lastIndexOf(".")).split("x")[0] + '; --height: ' + path.substring(path.lastIndexOf("-") + 1, path.lastIndexOf(".")).split("x")[1] +';'} 
+                    data-fancybox 
+                    data-src={path} 
+                    data-caption={caption}>
+                    <img src={path} alt={caption} />
+                </li>
+            ))
+        }
+    </ul>
+  </div>

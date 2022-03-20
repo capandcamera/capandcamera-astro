@@ -1,0 +1,49 @@
+{
+    "nav" : [
+        {   
+            "title": "about",
+            "children": []
+        },
+        {   
+            "title": "photography",
+            "children": [ 
+                {                
+                    "page": "general",
+                    "title": "general"
+                },
+                {
+                    "page": "astro",
+                    "title": "astronomical"
+                },
+                {
+                    "page": "action-figures",
+                    "title": "action figures"
+                }
+            ]
+        },
+        {   
+            "title": "design",
+            "hidden": true,
+            "children" : [
+                {
+                    "page": "composites",
+                    "title": "composites",
+                    "hidden": true
+                }
+            ]
+        },
+        {   
+            "title": "video",
+            "hidden": true,
+            "children": [
+                {
+                    "page": "advertisements",
+                    "title": "advertisements",
+                    "hidden": true
+                }
+
+            ]
+
+        }
+    ]
+}
