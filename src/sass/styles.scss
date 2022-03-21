@@ -263,7 +263,7 @@ li.group-visible {
   grid-area: copyright-text;
   margin-bottom: auto;
   margin-top: auto;
-  opacity: 45%;
+  opacity: 60%;
   text-align: center;
   width: 150px;
 }
@@ -412,6 +412,7 @@ a:hover {
     .footer-grid {
       grid-template-areas: 'copyright-text darkmode-toggle';
       grid-template-columns: 1fr min-content;
+      height: inherit;
     }
 
     .icon-mode {
