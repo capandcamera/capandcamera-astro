@@ -20,7 +20,7 @@ $("body").on("contextmenu", "img", function(e) {
 });
 
 $(window).on('resize', function(){
-    if ($(this).width() >= 1080) {
+    if ($(this).width() > 1080) {
         $('.sidebar').show();
     } else {
         $('.sidebar').hide();         
