@@ -41,4 +41,16 @@ function toggleNav() {
     $('.mobile-topbar-nav-icon').toggleClass(["fa-xmark","fa-bars"])
 }
 
+Fancybox.bind('[data-fancybox]', {
+    Image: {
+      zoom: false,
+      click: 'close',
+      wheel: null
+
+    },
+
+    Toolbar: {
+        display: ['close']
+    }
+  });
 
