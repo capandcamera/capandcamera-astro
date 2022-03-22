@@ -2,14 +2,17 @@
 import Layout from '../layouts/BaseLayout.astro'
 ---
 <Layout> 
+
     <div class="container-contact">
-        <h2> Send a Message </h2>
-        <br/> <br/> <br/>
         <form 
         id="contact-form"
         method="POST" 
-        action="https://script.google.com/macros/s/AKfycbw0zF9-UiNzgek4aeG5p1YjSUyDQY8zrjz5oDn4OG1p0hz6xNv5DFZsL7fWPEpCFJcS/exec">
+        action="https://script.google.com/macros/s/AKfycbw0zF9-UiNzgek4aeG5p1YjSUyDQY8zrjz5oDn4OG1p0hz6xNv5DFZsL7fWPEpCFJcS/exec"
+        >
+            <h2> Send a Message </h2>
+            <br/>
             <section id="form">
+
                 <input name="Name" type="text" placeholder="NAME" required>
                 <br/>
                 <input name="Email" type="email" placeholder="EMAIL" required>
