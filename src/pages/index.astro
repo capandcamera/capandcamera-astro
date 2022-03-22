@@ -2,9 +2,12 @@
 // Style Imports
 import Layout from '../layouts/BaseLayout.astro'
 
+const title = 'Cap and Camera';
+const description = 'Main Page of Cap and Camera, The Artistic Portfolio of Joshua Powell.'
+
 ---
 
-<Layout> 
+<Layout title={title} description={description} > 
     <div class="container-about">
         <div class="container-about-section">
             <img class="about-image" src="/assets/photos/about.jpg">

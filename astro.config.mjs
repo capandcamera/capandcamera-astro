@@ -5,7 +5,7 @@ export default {
     src: './src/',
     pages: './src/pages/',
  buildOptions: {
-    site: 'http://capandcamera.com',           // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
+    site: 'https://capandcamera.com',           // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
     sitemap: true,         // Generate sitemap (set to "false" to disable)
   },
   devOptions: {

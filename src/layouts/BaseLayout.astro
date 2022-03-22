@@ -1,16 +1,39 @@
 ---
 import '../sass/styles.scss'
 import BuildNavigation from '../components/BuildNavigation.astro'
+
+const {title,description} = Astro.props;
+const headimg = Astro.site + "assets/photos/MoonStack_20210922-1080x720.jpg";
 ---
 
 <html data-theme="light">
-    <head>
+    <head>    
+        <!-- SEO Tags-->
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href={Astro.request.canonicalURL.href}>
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@capandcamera" />
+        <meta name="twitter:creator" content="@capandcamera" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={headimg} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={Astro.site}/>
+        <meta property="og:image" content={headimg} />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_GB" />
+        
+        <!-- Other Head Tags-->
         <script> // Render blocking JS:
             if (localStorage.theme) {
                 document.documentElement.setAttribute("data-theme", localStorage.theme);
             }  
         </script>
-        <title>Cap and Camera</title>
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/e5f5274619.js" crossorigin="anonymous"></script>
         <link href="/assets/css/fancybox.css" rel="stylesheet" />
@@ -20,7 +43,6 @@ import BuildNavigation from '../components/BuildNavigation.astro'
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
         <link rel="manifest" href="/assets/favicon/site.webmanifest">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body class="light">
         <div id="container">
