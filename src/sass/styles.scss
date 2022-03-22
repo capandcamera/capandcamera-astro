@@ -19,8 +19,6 @@ $letter-spacing-default: 2.5px;
 $letter-spacing-small: 2px;
 $nav-selected-font-weight: 700;
 
-
-
 // Overrides 
 .fancybox__content > img {
   border: 0px !important;
@@ -47,7 +45,6 @@ body {
   text-transform: uppercase;
 }
 
-
 p {
   &.about {
     font-size: $font-size-default;
@@ -73,7 +70,8 @@ p {
   color: $clr-dark-primary;
 
   hr {
-    border-top: 1px solid rgba($clr-dark-secondary, 1);
+    border-top: 3px solid rgba($clr-dark-secondary, 1);
+    margin-top: 0px;
   }
 
   .fas {
@@ -114,6 +112,29 @@ p {
     color:$clr-dark-primary;
   }
 
+
+  form {
+
+    input {
+      border: 1px solid $clr-dark-primary;
+    }
+
+    textarea {
+      border: 1px solid $clr-dark-primary;
+    }
+
+    button {
+      border: 1px solid $clr-dark-primary;
+      background-color: $clr-dark-primary;
+      color: $clr-dark-bg;
+
+      &:disabled {
+        border: 1px solid rgba($clr-dark-primary,0.5);
+        background-color: $clr-dark-bg;
+        color: rgba($clr-dark-primary,0.5);
+      }
+    }
+  }
 }
 
 [data-theme="light"] {
@@ -121,7 +142,8 @@ p {
   color: $clr-light-primary;
 
   hr {
-    border-top: 1px solid rgba($clr-light-secondary,.5);
+    border-top: 1px solid rgba($clr-light-secondary, 1);
+    margin-top: 2px;
   }
 
   .fas {
@@ -159,6 +181,28 @@ p {
   }
 
 
+  form {
+
+    input {
+      border: 1px solid $clr-light-primary;
+    }
+
+    textarea {
+      border: 1px solid $clr-light-primary;
+    }
+
+    button {
+      border: 1px solid $clr-light-primary;
+      background-color: $clr-light-primary;
+      color: $clr-light-bg;
+
+      &:disabled {
+        border: 1px solid rgba($clr-light-primary,0.5);
+        background-color: $clr-light-bg;
+        color: rgba($clr-light-primary,0.5);
+      }
+    }
+  } 
 }
 
 
@@ -234,7 +278,6 @@ li {
 
 li.group-visible {
   display: block;
-
 }
 
 .nav-selected {
@@ -255,7 +298,6 @@ li.group-visible {
     grid-template-areas: 'darkmode-toggle copyright-text';
     grid-template-columns: min-content 1fr;
   }
-
 }
 
 .copyright-text {
@@ -279,7 +321,6 @@ li.group-visible {
 
 .darkmode-toggle {
   grid-area: darkmode-toggle;
-
 }
 
 .icon-mode,
@@ -328,6 +369,51 @@ li.group-visible {
   }
 }
 
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  height: inherit;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    margin-bottom: $height-bar;
+    padding: $height-bar;
+    margin-left: auto;
+    margin-right: auto;
+
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      background-color: #f1f1f1;
+    }
+
+    textarea {
+      border-radius: 4px;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+      resize: none;
+      background-color: #f1f1f1;
+    }
+
+    button {
+      height: 25px;
+      width: 100px;
+      border-radius: 4px;
+      background-color: none;
+      text-transform: uppercase;
+      width: 100%;
+    }
+  }
+}
+
 a:hover {
   text-shadow: .25px 0 .1px, -.25px 0 .2px;
 }
@@ -352,14 +438,12 @@ a:hover {
     padding: 0;
     position: relative;
 
-    >img {
+    > img {
       height: 100%;
       position: absolute;
       width: 100%;
-
     }
   }
-
 }
 
 .justified-image-grid::after {

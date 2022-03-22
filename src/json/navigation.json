@@ -50,6 +50,11 @@
 
             ]
 
+        },       
+        {   
+            "title": "contact",
+            "hidden": false,
+            "children": []
         }
     ]
 }

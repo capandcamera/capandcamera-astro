@@ -46,11 +46,9 @@ Fancybox.bind('[data-fancybox]', {
       zoom: false,
       click: 'close',
       wheel: null
-
     },
 
     Toolbar: {
         display: ['close']
     }
   });
-
