@@ -23,7 +23,11 @@ $nav-selected-font-weight: 700;
 .fancybox__content > img {
   border: 0px !important;
 }
-
+h1 {
+  &.seo-hidden {
+    display: none;
+  }
+}
 hr {
   border: 0;
 }

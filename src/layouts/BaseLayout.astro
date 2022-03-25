@@ -2,16 +2,16 @@
 import '../sass/styles.scss'
 import BuildNavigation from '../components/BuildNavigation.astro'
 
-const {title,description} = Astro.props;
+const {title, description, header} = Astro.props;
 const headimg = Astro.site + "assets/photos/MoonStack_20210922-1080x720.jpg";
 ---
 
-<html data-theme="light">
+<html lang="en" data-theme="light">
     <head>    
         <!-- SEO Tags-->
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href={Astro.request.canonicalURL.href}>
@@ -27,7 +27,14 @@ const headimg = Astro.site + "assets/photos/MoonStack_20210922-1080x720.jpg";
         <meta property="og:image" content={headimg} />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_GB" />
-        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-D7BL9K1SWK"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-D7BL9K1SWK');
+        </script>
         <!-- Other Head Tags-->
         <script> // Render blocking JS:
             if (localStorage.theme) {
@@ -63,6 +70,7 @@ const headimg = Astro.site + "assets/photos/MoonStack_20210922-1080x720.jpg";
                 </nav>
             </section>
             <section id="content" class="content">
+                <h1 class="seo-hidden">{header}</h1>
                 <slot/>
             </section>
             <section id="footer" class="footer">

@@ -3,9 +3,9 @@
 import Layout from './BaseLayout.astro'
 import BuildGallery from '../components/BuildGallery.astro';
 
-const {title, description, gallery} = Astro.props;
+const {title, description, header, gallery} = Astro.props;
 ---
   
-<Layout title={title} description={description}>
+<Layout title={title} description={description} header={header}>
   <BuildGallery gallery={gallery}/>
 </Layout>
