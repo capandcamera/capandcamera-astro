@@ -1,10 +1,10 @@
-$clr-dark-primary: #ECB365;
-$clr-dark-secondary: #04293A;
-$clr-dark-bg: #041C32;
+$clr-dark-primary: #ecb365;
+$clr-dark-secondary: #04293a;
+$clr-dark-bg: #041c32;
 
-$clr-light-primary: #393E46;
-$clr-light-secondary: #929AAB;
-$clr-light-bg: #F7F7F7;
+$clr-light-primary: #393e46;
+$clr-light-secondary: #929aab;
+$clr-light-bg: #f7f7f7;
 
 $height-bar: 50px;
 $border-sm: 3px;
@@ -19,7 +19,7 @@ $letter-spacing-default: 2.5px;
 $letter-spacing-small: 2px;
 $nav-selected-font-weight: 700;
 
-// Overrides 
+// Overrides
 .fancybox__content > img {
   border: 0px !important;
 }
@@ -109,16 +109,14 @@ p {
   }
 
   .fancybox__content > img {
-    box-shadow: 0px 0px $border-lg $border-lg rgba($clr-dark-secondary, 0.75)
+    box-shadow: 0px 0px $border-lg $border-lg rgba($clr-dark-secondary, 0.75);
   }
 
   .fancybox__caption {
-    color:$clr-dark-primary;
+    color: $clr-dark-primary;
   }
 
-
   form {
-
     input {
       border: 1px solid $clr-dark-primary;
     }
@@ -133,9 +131,9 @@ p {
       color: $clr-dark-bg;
 
       &:disabled {
-        border: 1px solid rgba($clr-dark-primary,0.5);
+        border: 1px solid rgba($clr-dark-primary, 0.5);
         background-color: $clr-dark-bg;
-        color: rgba($clr-dark-primary,0.5);
+        color: rgba($clr-dark-primary, 0.5);
       }
     }
   }
@@ -163,11 +161,11 @@ p {
   }
 
   img {
-    border: $border-sm solid rgba($clr-light-secondary,.25)
+    border: $border-sm solid rgba($clr-light-secondary, 0.25);
   }
 
   .about-image {
-    border: $border-lg solid rgba($clr-light-secondary,.15)
+    border: $border-lg solid rgba($clr-light-secondary, 0.15);
   }
 
   .sidebar,
@@ -181,12 +179,10 @@ p {
   }
 
   .fancybox__content > img {
-    box-shadow: 0px 0px $border-lg $border-lg rgba($clr-light-secondary, .15)
+    box-shadow: 0px 0px $border-lg $border-lg rgba($clr-light-secondary, 0.15);
   }
 
-
   form {
-
     input {
       border: 1px solid $clr-light-primary;
     }
@@ -201,14 +197,13 @@ p {
       color: $clr-light-bg;
 
       &:disabled {
-        border: 1px solid rgba($clr-light-primary,0.5);
+        border: 1px solid rgba($clr-light-primary, 0.5);
         background-color: $clr-light-bg;
-        color: rgba($clr-light-primary,0.5);
+        color: rgba($clr-light-primary, 0.5);
       }
     }
-  } 
+  }
 }
-
 
 .sidebar {
   float: left;
@@ -235,7 +230,6 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-
 }
 
 .mobile-topbar-logo {
@@ -279,7 +273,6 @@ li {
   padding-inline-start: 20px;
 }
 
-
 li.group-visible {
   display: block;
 }
@@ -299,7 +292,7 @@ li.group-visible {
 
   .footer-grid {
     display: grid;
-    grid-template-areas: 'darkmode-toggle copyright-text';
+    grid-template-areas: "darkmode-toggle copyright-text";
     grid-template-columns: min-content 1fr;
   }
 }
@@ -419,7 +412,9 @@ li.group-visible {
 }
 
 a:hover {
-  text-shadow: .25px 0 .1px, -.25px 0 .2px;
+  //text-shadow: .25px 0 .1px, -.25px 0 .2px;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .justified-image-grid {
@@ -452,17 +447,17 @@ a:hover {
 
 .justified-image-grid::after {
   background: var(--last-row-background);
-  content: ' ';
+  content: " ";
   flex-grow: 1000000000;
 }
 
 .fancybox__carousel .fancybox__slide.can-zoom_out .fancybox__content,
-.fancybox__carousel.is-draggable .fancybox__slide, .fancybox__carousel.is-draggable .fancybox__slide .fancybox__content {
+.fancybox__carousel.is-draggable .fancybox__slide,
+.fancybox__carousel.is-draggable .fancybox__slide .fancybox__content {
   cursor: pointer;
 }
 
 @media screen and (max-width: 1080px) {
-  
   .container-about {
     .container-about-section {
       flex: 100%;
@@ -471,7 +466,7 @@ a:hover {
         width: 25%;
         margin-bottom: $height-bar;
       }
-  
+
       .about-content {
         width: 80%;
         margin: auto;
@@ -498,7 +493,7 @@ a:hover {
     width: 100%;
 
     .footer-grid {
-      grid-template-areas: 'copyright-text darkmode-toggle';
+      grid-template-areas: "copyright-text darkmode-toggle";
       grid-template-columns: 1fr min-content;
       height: inherit;
     }

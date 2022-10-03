@@ -1,60 +1,63 @@
 {
-    "nav" : [
-        {   
-            "title": "about",
-            "hidden": false,
-            "children": []
+  "nav": [
+    {
+      "title": "about",
+      "hidden": false,
+      "children": []
+    },
+    {
+      "title": "products",
+      "hidden": false,
+      "children": [
+        {
+          "page": "non-commissioned",
+          "title": "Non-Commissioned",
+          "hidden": false
         },
-        {   
-            "title": "photography",
-            "hidden": false,
-            "children": [ 
-                {                
-                    "page": "general",
-                    "title": "general",
-                    "hidden": false
-
-                },
-                {
-                    "page": "astro",
-                    "title": "astronomical",
-                    "hidden": false
-                },
-                {
-                    "page": "action-figures",
-                    "title": "action figures",
-                    "hidden": false
-                }
-            ]
-        },
-        {   
-            "title": "design",
-            "hidden": true,
-            "children" : [
-                {
-                    "page": "composites",
-                    "title": "composites",
-                    "hidden": true
-                }
-            ]
-        },
-        {   
-            "title": "video",
-            "hidden": true,
-            "children": [
-                {
-                    "page": "advertisements",
-                    "title": "advertisements",
-                    "hidden": true
-                }
-
-            ]
-
-        },       
-        {   
-            "title": "contact",
-            "hidden": false,
-            "children": []
+        {
+          "page": "commissioned",
+          "title": "Commissioned",
+          "hidden": true
         }
-    ]
+      ]
+    },
+    {
+      "title": "other",
+      "hidden": true,
+      "children": [
+        {
+          "page": "astrophotography",
+          "title": "astrophotography",
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "title": "design",
+      "hidden": true,
+      "children": [
+        {
+          "page": "composites",
+          "title": "composites",
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "title": "video",
+      "hidden": true,
+      "children": [
+        {
+          "page": "advertisements",
+          "title": "advertisements",
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "title": "contact",
+      "hidden": false,
+      "children": []
+    }
+  ]
 }

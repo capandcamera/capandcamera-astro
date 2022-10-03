@@ -13,18 +13,20 @@ const currentPage = Astro.request.url.pathname;
         hidden != true ?
             children.length === 0 ?
                 <ul id={'nav-' + title}>
-                    <a href={title === 'about' ? '/' : '/'+ title} class={ (currentPage === '/' && title === 'about') || (currentPage === '/' + title)? 'nav-selected' : undefined}>{title}</a>                        
+                    <a href={title === 'about' ? '/' : '/'+ title} class={ (currentPage === '/' && title === 'about') || (currentPage === '/' + title)? 'nav-selected' : undefined}>{title}</a>
                 </ul>
-            : 
-                <ul id={'nav-' + title} 
+            :
+                <ul id={'nav-' + title}
                     class={currentPage.startsWith('/' + title) ? 'nav-selected nav-group nav-' + title : 'nav-group nav-' + title}>
-                    <a id={'nav-' + title + '-link'}  onclick="toggleMenu(this.id)"> 
-                        {title} 
-                        <i  id={'nav-' + title + '-icon'} 
+                    <a id={'nav-' + title + '-link'}  onclick="toggleMenu(this.id)">
+                        {title}
+                        <i  id={'nav-' + title + '-icon'}
                             class={currentPage.startsWith('/' + title) ? 'fa-solid fa-angle-down' : 'fa-solid fa-angle-right'}> </i>
+                        <br/>
+
                     </a>
 
-            
+
                     {children?.map((child) =>
                         child.hidden != true ?
                             <li id={'nav-' + title + '-' + child.page} class={currentPage.startsWith('/' + title) ? 'group-visible nav-child nav-' + title : 'nav-child nav-' + title}>
@@ -33,10 +35,10 @@ const currentPage = Astro.request.url.pathname;
                         : undefined
                     )}
 
-                </ul> 
+                </ul>
 
         : undefined
-            
+
     ))
 
 }
